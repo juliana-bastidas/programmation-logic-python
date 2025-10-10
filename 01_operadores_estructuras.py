@@ -64,3 +64,11 @@ print(f"XOR 10 & 3 = {a ^ b}") # 1001
 print(f"Not: ~10 = {~a}") # 0101
 print(f"Desplazamiento a la izquierda 10 << 2 = {a << 2}") # 101000
 print(f"Desplazamiento a la derecha 10 >> 2 = {a >> 2}") # 0010
+
+s="hola mundo"
+print(s[2])
+print(s[-1])
+print(s[::1])
+print(s[::2])
+print(s.upper())
+print(s.split())
