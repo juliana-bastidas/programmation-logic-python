@@ -109,7 +109,7 @@ pares y que no son ni el 16 ni multiplos de 3
 for number in range(10,56):
     if number %2 ==0 and number !=16 and number %3 !=0:
         print(number)
-
+"""Este es otro ejercicio"""
 s="hola mundo"
 print(s[2])
 print(s[-1])
