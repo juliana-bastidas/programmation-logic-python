@@ -50,6 +50,13 @@ de 11 dígitos (o el número de dígitos que quieras).
 
 def my_agenda():
     agenda ={}
+    def insert_contact():
+        phone = input( "Introduce el telefomno del contacto: ")
+        if phone.isdigit() and len(phone) > 0 and len(phone)<=11:
+            agenda[name] = phone
+        else:
+            print ("Debes introducir un numero de telefono con menos de 12 digitos")
+
     while True:
         print("1. Buscar contacto")
         print("2. Insertar contacto")
@@ -62,20 +69,25 @@ def my_agenda():
             case "1":
                 name = input ("Introduce el nombre del contacto a buscar: ")
                 if name in agenda:
-                    print(f"El numero de telefono de {name} es {agenda[name]}")
+                    print(f"El numero de telefono de {name} es :  {agenda[name]}.")
                 else:
                     print (f"el contacto {name} no existe")
             case "2":
                 name = input ("Introduce el nombre del contacto: ")
-                phone = input( "Introduce el telefomno del contacto")
-                if phone.isdigit() and len(phone) > 0 and len(phone)<=11:
-                    agenda[name] = phone
-                else:
-                    print ("Debes introducir un numero de telefono con menos de 12 digitos")
+                insert_contact()
             case "3":
-                pass
+                name = input ("Introduce el nombre del contacto a actualizar: ")
+                if name in agenda:
+                    insert_contact()
+                else:
+                    print (f"el contacto {name} no existe")
             case "4":
-                pass
+                name = input ("Introduce el nombre del contacto a eliminar: ")
+                if name in agenda:
+                    print(f"{name} Eliminado.")
+                    del agenda[name]
+                else:
+                    print (f"el contacto {name} no existe")
             case "5":
                 print("Saliendo de la agenda")
                 break
