@@ -1,0 +1,3 @@
+manzana, 5, 2
+huevo, 20, 1
+pera, 15, 1.5
