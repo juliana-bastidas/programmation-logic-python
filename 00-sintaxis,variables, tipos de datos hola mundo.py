@@ -20,3 +20,6 @@ my_string = "mi cadena de texto"
 my_other_string = " otra cadena"
 
 print ("hola pyhton")
+print("Esto es una \"pulgada\" dentro de un string con comillas dobles")
+print("""Esto es una "pulgada" dentro de un string con triple comillas""")
+print('Esto es una "pulgada" dentro de un string con comillas simples')
